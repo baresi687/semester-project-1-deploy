@@ -1,0 +1,106 @@
+.hero-banner-mobile {
+  background-image: url('../img/hero-banner-explore-mobile.jpg');
+}
+
+.hero-text p,
+.explore-for .container div {
+  padding-top: 20px;
+}
+
+.explore-jump-to {
+  display: none;
+  height: 100px;
+  background-color: var(--header-and-heading-color);
+}
+
+.for-kids-image,
+.for-teachers-image,
+.for-researchers-image {
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* To make images the full width inside container. Referenced in report */
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  object-fit: cover;
+}
+
+/*Removing the horizontal scrollbar where full width images inside of set width containers */
+section {
+  overflow-x: hidden;
+}
+
+.for-kids-image {
+  background-image: url('../img/hero-for-kids-mobile.jpg');
+}
+
+.for-teachers-image {
+  background-image: url('../img/hero-for-teachers-mobile.jpg');
+}
+
+.for-researchers-image {
+  background-image: url('../img/hero-for-researchers-mobile.jpg');
+}
+
+.explore-for .container div h2 {
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 767px) {
+  .hero-banner-mobile {
+    background-image: none;
+  }
+
+  .hero-banner {
+    background-image: url('../img/hero-banner-explore.jpg');
+  }
+
+  .explore-jump-to {
+    display: block;
+  }
+
+  .explore-jump-to .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+  }
+
+  .explore-jump-to .container a {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .explore-for .container div {
+    padding-top: 0;
+  }
+
+  .explore-for .container div p:last-child {
+    margin-bottom: 30px;
+  }
+
+  .for-kids-image,
+  .for-teachers-image,
+  .for-researchers-image {
+    height: 760px;
+    background-position-y: 50%;
+  }
+
+  .for-kids-image {
+    background-image: url('../img/hero-for-kids.jpg');
+  }
+
+  .for-teachers-image {
+    background-image: url('../img/hero-for-teachers.jpg');
+  }
+
+  .for-researchers-image {
+    background-image: url('../img/hero-for-researchers.jpg');
+  }
+
+  .explore-for .container div p {
+    width: 530px;
+    margin: 16px auto;
+  }
+}

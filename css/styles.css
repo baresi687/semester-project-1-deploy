@@ -1,0 +1,413 @@
+:root {
+  --font-family-heading: 'Farro', sans-serif;
+  --font-family-paragraph: 'IBM Plex Sans', sans-serif;
+  --body-text-color: #343434;
+  --header-and-heading-color: #0487d9;
+  --button-color: #0442bf;
+  --link-color: #03258c;
+  /*  */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  letter-spacing: 0.1em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.6em;
+}
+
+p,
+a,
+button,
+input,
+li {
+  font-family: var(--font-family-paragraph);
+  color: var(--body-text-color);
+}
+
+.links {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: 600;
+  font-size: 1.125em;
+}
+
+.main-navigation .links:hover,
+main .links:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: var(--button-color);
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 60px;
+  background-color: var(--header-and-heading-color);
+}
+
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 10px;
+}
+
+/* Hamburger menu */
+
+.main-navigation {
+  position: absolute;
+  top: 40px;
+  display: block;
+  z-index: 5;
+  padding: 10px 20px;
+  background-color: var(--header-and-heading-color);
+  width: 320px;
+  height: 340px;
+  transition: transform 0.3s ease-out;
+  transform: translateX(-500%);
+}
+
+.main-navigation li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+.main-navigation .links:hover {
+  color: white;
+}
+
+.main-navigation li a {
+  color: white;
+}
+
+#hamburger-menu:checked ~ .main-navigation {
+  transform: translate(0px);
+}
+
+.main-logo,
+.logo-footer {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#hamburger-menu,
+.newsletter-label {
+  display: none;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 30px;
+  padding-top: 6px;
+  cursor: pointer;
+}
+
+.hero-banner-mobile {
+  background-image: url('../img/hero-banner-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.hero-heading {
+  margin: 0;
+  position: absolute;
+  top: 210px;
+  color: white;
+  font-weight: 700;
+}
+
+.explore-text {
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  margin: 20px 0;
+}
+
+.hero-text h2 {
+  color: var(--body-text-color);
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-features {
+  margin-bottom: 40px;
+}
+
+.features {
+  margin-top: 80px;
+}
+
+.features img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+section:nth-child(n + 2) h2 {
+  text-align: center;
+  color: var(--header-and-heading-color);
+}
+
+.newsletter {
+  background-image: url('../img/newsletter-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 675px;
+  padding-top: 80px;
+}
+
+.newsletter img {
+  display: block;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.newsletter h3,
+.newsletter p {
+  color: white;
+}
+
+.newsletter-input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+.newsletter button {
+  margin-top: 20px;
+}
+
+.donate {
+  padding-top: 80px;
+}
+
+.donate p {
+  margin-bottom: 0;
+}
+
+.footer {
+  padding-top: 40px;
+}
+
+.logo-text-footer {
+  filter: invert(52%) sepia(0%) saturate(1665%) hue-rotate(171deg)
+    brightness(83%) contrast(90%);
+}
+
+.footer-main ul {
+  margin: 40px auto;
+  padding: 0;
+}
+
+.footer-bold {
+  font-weight: 600;
+}
+
+.footer-main ul li {
+  padding: 4px 0;
+}
+
+.go-to-top,
+.edu-website {
+  text-align: center;
+}
+
+.go-to-top {
+  margin-top: 100px;
+}
+
+.go-to-top a {
+  color: var(--body-text-color);
+  font-size: 1em;
+}
+
+.edu-website {
+  margin-top: 60px;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    max-width: 990px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .main-navigation {
+    display: inline-flex;
+    justify-content: space-between;
+    position: revert;
+    width: 60%;
+    height: auto;
+    padding: 0;
+    margin: 10px 0 10px;
+    transform: translateX(0px);
+  }
+
+  .main-navigation li {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .main-navigation li a {
+    font-size: 1.125em;
+    font-weight: 500;
+  }
+
+  .hero-banner-mobile {
+    background-image: none;
+  }
+
+  .hero-banner {
+    background-image: url('../img/hero-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 670px;
+  }
+
+  .hero-heading {
+    position: relative;
+    top: 390px;
+    color: white;
+  }
+
+  .hero-text p,
+  .hero-text h2 {
+    color: white;
+  }
+
+  .hero-text p:last-of-type {
+    line-height: 1.6em;
+    width: 530px;
+  }
+
+  .line-break {
+    display: block;
+  }
+
+  .hero-text h2,
+  .hero-text a {
+    display: inline-block;
+  }
+
+  .hero-text button {
+    width: 200px;
+    margin-left: 50px;
+  }
+
+  .hero-text {
+    position: relative;
+    top: 120px;
+  }
+
+  .main-features .container {
+    display: flex;
+    gap: 30px;
+  }
+
+  .main-features {
+    margin: 40px 0 60px 0;
+  }
+
+  .features {
+    flex-basis: 33.33333%;
+    margin-top: 0;
+  }
+
+  .newsletter {
+    height: auto;
+    padding: 150px 0;
+    background-image: url('../img/newsletter.jpg');
+  }
+
+  .newsletter .container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .newsletter button {
+    width: 150px;
+    margin: 0;
+  }
+
+  .subscribe {
+    position: relative;
+    width: 370px;
+  }
+
+  .newsletter-input {
+    margin: 0;
+    width: 200px;
+  }
+
+  .subscribe .button {
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+  }
+
+  .donate {
+    width: 260px;
+    padding-top: 0;
+  }
+
+  .donate button {
+    margin-top: 8px;
+  }
+
+  .footer-logo {
+    display: inline-block;
+  }
+
+  .footer-logo img:last-child {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .footer-main ul {
+    margin: 0;
+  }
+
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .edu-website {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Community Science Museum" />
+    <meta
+      name="keywords"
+      content="Science, Museum, Cosmology, Evolution, Biology, Medicine, Robotics, AI, Ecology, Explore, Exhibitions"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/exhibitions.css" />
+    <title>The Community Science Museum - Exhibitions</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav class="navigation">
+          <div class="museum-logo">
+            <a href="/" aria-label="Home" class="links">
+              <img src="./img/logo.svg" class="main-logo" alt="Logo" />
+              <img src="./img/logo-text-mobile.svg" alt="Logo text" />
+            </a>
+          </div>
+
+          <label for="hamburger-menu">
+            <span class="sr-only"> Hamburger menu</span>
+            <i class="fas fa-bars"></i>
+          </label>
+          <input id="hamburger-menu" type="checkbox" />
+
+          <ul class="main-navigation">
+            <li><a href="visit.html" class="links">Visit</a></li>
+            <li><a href="explore.html" class="links">Explore</a></li>
+            <li><a href="exhibitions.html" class="links">Exhibitions</a></li>
+            <li><a href="#" class="links">Support</a></li>
+            <li><a href="#" class="links">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-banner">
+        <div class="hero-banner-mobile">
+          <div class="container">
+            <h1 class="hero-heading">See our exhibitions</h1>
+          </div>
+        </div>
+        <div class="desktop-hero-cta">
+          <div class="container">
+            <div class="hero-text">
+              <p>
+                Over the course of human history, science has developed from our
+                early understanding of fire, wind, water, and earth to exploring
+                everything from galaxies far away to the very building blocks of
+                life itself.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="exhibitions">
+        <div class="container">
+          <div class="main-exhibitions">
+            <div class="exhibit">
+              <h2>Cosmology</h2>
+              <img src="./img/cosmos.jpg" alt="Cosmology" />
+              <p>
+                Explore the wonders of our cosmos. Our fantastic exhibition,
+                ‘The Sky Above Us’, explores the night sky and what we can see
+                and know about the universe around us. We’ll locate the various
+                constellations and galaxies that can be seen and learn a bit
+                about the early navigators who used the stars to travel by.
+              </p>
+            </div>
+
+            <div class="exhibit">
+              <h2>Evolution</h2>
+              <img src="./img/evolution.jpg" alt="Evolution" />
+              <p>
+                For centuries, philosophers and scientists have wrestled with
+                the question of our origins. Where do we come from and how did
+                we get here? Since Darwin proposed his theory of evolution we
+                have had a framework for exploring and understanding our place
+                in this world.
+              </p>
+            </div>
+
+            <div class="exhibit">
+              <h2>Biology and Medicine</h2>
+              <img src="./img/bio-med.jpg" alt="Biology and Medicine" />
+              <p>
+                For many people their life expectancy is much longer and their
+                quality of life much improved, thanks to the growth of our
+                understanding of medicine. Over a series of exhibits we explore
+                the history of medicine and take a look at some major
+                breakthroughs including the discovery of penicillin and the
+                first heart transplant.
+              </p>
+            </div>
+
+            <div class="exhibit">
+              <h2>Robotics and AI</h2>
+              <img src="./img/robotics.jpg" alt="Robotics and AI" />
+              <p>
+                The information revolution is here and robotics and artificial
+                intelligence are the science of the future. From useful home
+                applications of AI to industrial uses of robotics, the future is
+                here. You can even say hello and shake the hand of Rob the
+                Robot.
+              </p>
+            </div>
+
+            <div class="exhibit">
+              <h2>Ecology</h2>
+              <img src="./img/ecology.jpg" alt="Ecology" />
+              <p>
+                As we learn more and more of the impact humans are having on the
+                planet, the more important it becomes that scientists explore
+                how to create a sustainable future not just for humans but for
+                the whole planet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container">
+          <div class="subscribe">
+            <img src="./img/newsletter.svg" alt="Newsletter icon" />
+            <h3>Subscribe to our newsletter</h3>
+            <p>
+              Get the latest news and updates by subscribing to our newsletter
+            </p>
+            <input
+              id="newsletter"
+              type="text"
+              name="newsletter"
+              placeholder="Email"
+              class="newsletter-input"
+            />
+            <label for="newsletter" class="newsletter-label">Newsletter</label>
+            <button class="button">Subscribe</button>
+          </div>
+
+          <div class="donate">
+            <img src="./img/donate.svg" alt="Newsletter icon" />
+            <h3>Support the museum</h3>
+            <p>Donate to and support the museum</p>
+            <button class="button">Support</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <img
+              src="./img/logo-footer.svg"
+              alt="Logo footer"
+              class="logo-footer"
+            />
+            <img
+              src="./img/logo-text-mobile.svg"
+              alt="Logo text"
+              class="logo-text-footer"
+            />
+          </div>
+
+          <ul>
+            <li class="footer-bold">Location</li>
+            <li>Nedre Eikervei 47</li>
+            <li>4034 Oslo</li>
+          </ul>
+
+          <ul>
+            <li class="footer-bold">Opening Hours</li>
+            <li>Mon - Closed</li>
+            <li>Tue - 10:00 - 16:00</li>
+            <li>Wed - 10:00 - 16:00</li>
+            <li>Thur - 10:00 - 16:00</li>
+            <li>Fri - 10:00 - 19:00</li>
+            <li>Sat - 9:00 - 16:00</li>
+            <li>Sun - 9:00 - 16:00</li>
+          </ul>
+
+          <ul>
+            <li class="footer-bold">Follow Us</li>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+          </ul>
+
+          <ul>
+            <li class="footer-bold">About</li>
+            <li>Contact</li>
+            <li>Support</li>
+            <li>Jobs</li>
+          </ul>
+        </div>
+
+        <p class="go-to-top"><a href="#header" class="links">Go to top</a></p>
+        <p class="edu-website">
+          This website was created for educational purpose only
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+.hero-banner-mobile {
+  background-image: url('../img/hero-banner-exibit-mobile.jpg');
+}
+
+.hero-text p {
+  padding-top: 20px;
+}
+
+.exhibit {
+  padding: 20px 0 20px 0;
+}
+
+.exhibit img {
+  /* To make images the full width inside container. Referenced in report */
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  object-fit: cover;
+}
+
+/*Removing the horizontal scrollbar where full width images inside of set width containers */
+section {
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 767px) {
+  .hero-banner-mobile {
+    background-image: none;
+  }
+
+  .hero-banner {
+    background-image: url('../img/hero-banner-exibit.jpg');
+  }
+
+  .main-exhibitions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+
+  .exhibit {
+    flex-basis: 48%;
+  }
+
+  .exhibit img {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+  }
+}

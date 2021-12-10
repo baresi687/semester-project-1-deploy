@@ -1,0 +1,74 @@
+.hero-banner-mobile {
+  background-image: url('../img/hero-banner-visit-mobile.jpg');
+}
+
+.visit-main div h2 {
+  font-weight: 700;
+  /* font-size: 1.125em; */
+  text-align: left;
+}
+
+.visit-main {
+  margin-bottom: 40px;
+}
+
+.location .visit-text::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/location-icon.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 140px;
+  top: 40px;
+}
+
+.hero-text p,
+.visit-main div {
+  padding-top: 20px;
+}
+
+/* To make images the full width inside container. Referenced in report */
+.location img {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  object-fit: cover;
+}
+
+/*Removing the horizontal scrollbar where full width images inside of set width containers */
+section {
+  overflow-x: hidden;
+}
+
+p span {
+  display: block;
+}
+
+@media screen and (min-width: 767px) {
+  .hero-banner-mobile {
+    background-image: none;
+  }
+
+  .hero-banner {
+    background-image: url('../img/hero-banner-visit.jpg');
+  }
+
+  .visit-information {
+    padding: 20px 0 20px 0;
+  }
+
+  .visit-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .visit-main div {
+    flex-basis: 25.33333%;
+  }
+
+  .location img {
+    width: 100%;
+    margin: 0;
+  }
+}
