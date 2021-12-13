@@ -5,7 +5,6 @@
   --header-and-heading-color: #0487d9;
   --button-color: #0442bf;
   --link-color: #03258c;
-  /*  */
 }
 
 h1,
@@ -182,6 +181,7 @@ section:nth-child(n + 2) h2 {
   background-position: center;
   height: 675px;
   padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .newsletter img {
