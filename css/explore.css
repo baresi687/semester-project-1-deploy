@@ -53,6 +53,7 @@ section {
 
   .hero-banner {
     background-image: url('../img/hero-banner-explore.jpg');
+    background-position-y: top;
   }
 
   .explore-jump-to {

@@ -296,6 +296,7 @@ section:nth-child(n + 2) h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-position-y: 40%;
     height: 670px;
   }
 

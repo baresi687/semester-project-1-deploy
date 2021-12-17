@@ -29,17 +29,23 @@ section {
 
   .hero-banner {
     background-image: url('../img/hero-banner-exibit.jpg');
+    background-position-y: top;
   }
 
   .main-exhibitions {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     flex-wrap: wrap;
     margin-top: 60px;
   }
 
   .exhibit {
     flex-basis: 48%;
+    flex-grow: 1;
+  }
+
+  .exhibit:last-child {
+    flex-grow: 0;
   }
 
   .exhibit img {
