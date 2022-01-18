@@ -52,6 +52,10 @@ ul {
 header {
   height: 60px;
   background-color: var(--header-and-heading-color);
+  /* Made header sticky */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .container {
@@ -244,6 +248,10 @@ section:nth-child(n + 2) h2 {
 
 .go-to-top {
   margin-top: 100px;
+}
+
+.fa-arrow-up {
+  margin-right: 10px;
 }
 
 .go-to-top a {
