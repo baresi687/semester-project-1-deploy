@@ -5,6 +5,7 @@
   --header-and-heading-color: #0487d9;
   --button-color: #0442bf;
   --link-color: #03258c;
+  --header-menu-gradient: linear-gradient(to right, #0487d9 20%, #0442bf);
 }
 
 h1,
@@ -56,6 +57,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
+  background: var(--header-menu-gradient);
 }
 
 .container {
@@ -75,11 +77,11 @@ header {
 
 .main-navigation {
   position: absolute;
-  top: 40px;
+  top: 34px;
   display: block;
   z-index: 5;
-  padding: 10px 20px;
-  background-color: var(--header-and-heading-color);
+  padding: 0 20px;
+  background: var(--header-menu-gradient);
   width: 320px;
   height: 340px;
   transition: transform 0.3s ease-out;
@@ -89,7 +91,7 @@ header {
 .main-navigation li {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #d1c6c6ab;
 }
 
 .main-navigation .links:hover {
@@ -283,6 +285,7 @@ section:nth-child(n + 2) h2 {
     padding: 0;
     margin: 10px 0 10px;
     transform: translateX(0px);
+    background: none;
   }
 
   .main-navigation li {
