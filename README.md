@@ -1,6 +1,10 @@
 # The Community Science museum website
 
-<img src="/img/semester-project.jpg" width="600" alt="The Community Science Museum">
+<div>
+  <img src="/img/semester-project-mobile.jpg" height="500" alt="The Community Science Museum Mobile view">
+  &nbsp&nbsp&nbsp  
+  <img src="/img/semester-project-desktop.jpg" height="500" alt="The Community Science Museum Desktop view">
+</div>
 
 My second school project. Built with HTML and CSS only.
 
