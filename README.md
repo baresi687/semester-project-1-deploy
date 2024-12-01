@@ -27,10 +27,6 @@ Requirements of the project:
 - HTML
 - CSS
 
-## Deployed link
-
-https://semester-project-1-hreinn.netlify.app/
-
 ## Contact
 
 [My LinkedIn page](https://www.linkedin.com/in/hreinn-gylfason-b9a48521a/)
